@@ -41,10 +41,9 @@
   ```
   git config --global user.name "사용자 이름"
   git config --global user.email "사용자 이메일"
-  
   ```
 
-* **`git init`**: 현재 작업 디렉토리를 Git 저장소로 초기화한다. `.git` 숨김 폴더가 생성되며 버전 관리가 시작된다.
+* **`git init`**: 현재 작업 디렉토리를 Git 저장소로 초기화한다. `.git` 숨김 폴더가 생성되며 버전 관리가 시작된다. 로컬에서 `.git` 숨김폴더를 삭제하면 git으로 지정했던 것이 취소된다.
 
 * **`git status`**: 현재 저장소의 상태를 확인한다. 수정된 파일, 스테이징 여부, 커밋 가능한 변경 사항 등을 점검한다.
 
@@ -52,15 +51,13 @@
 
   ```
   git add 파일명
-  git add .
-  
+  git add .     # 이건 특정 파일만 올리는 게 아니라 다 올릴때 사용
   ```
 
 * **`git commit`**: Staging Area에 모인 변경 사항을 하나의 커밋(버전)으로 저장소에 기록한다.
 
   ```
   git commit -m "커밋 메시지"
-  
   ```
 
 * **`git log`**: 저장소의 커밋 이력을 조회한다.
@@ -73,14 +70,12 @@
 
   ```
   git push -u origin main
-  
   ```
 
 * **`git pull`**: 원격 저장소의 최신 변경 사항을 내려받아 로컬 저장소에 병합한다.
 
   ```
   git pull origin main
-  
   ```
 
 ## 3. Branch 상세 및 충돌 해결
@@ -147,17 +142,15 @@
        =======
        Right
        >>>>>>> right (병합하려는 right 브랜치)
-       
        ```
 
     7. **충돌 해결**: 충돌 마크(`<<<<<<<`, `=======`, `>>>>>>>`)를 모두 제거하고, 통합하여 반영할 값인 `"Hello"`로 파일 내용을 직접 수정 및 저장한다.
 
-    8. **병합 완료**: 수정된 파일인 `test.txt`를 스테이징 후 커밋하여 병합 프로세스를 완결한다.
+    8. **병합 완료**: 수정된 파일인 `test.txt`를 add 후 commit하여 merge를 완성한다.
 
        ```
        git add test.txt
        git commit -m "Fix merge conflict: resolved value to Hello"
-       
        ```
 
   * **💡 핵심 포인트 (독립성 및 병합 결과의 적용 범위)**:
