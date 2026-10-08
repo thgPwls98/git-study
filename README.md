@@ -25,3 +25,7 @@ git commit -m "Docs: Add Git & GitHub study summary"
 git push -u origin main
   ```
 * -u 옵션을 한 번 붙여두면, 다음부터는 단순히 git push만 입력해도 자동으로 origin의 main 브랜치로 자동 푸시된다!
+
+
+## 그 외 README.md 테스트용
+해당 Repository는 OZ codind School AI Bootcamp의 git/github 수업내용을 기반으로 작성되었다.
