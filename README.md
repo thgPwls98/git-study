@@ -29,3 +29,4 @@ git push -u origin main
 
 ## 그 외 README.md 테스트용
 해당 Repository는 OZ codind School AI Bootcamp의 git/github 수업내용을 기반으로 작성되었다.
+- Dates: 26. 10. 06 ~ 26. 10. 08
